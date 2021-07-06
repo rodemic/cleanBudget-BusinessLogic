@@ -14,8 +14,8 @@ jobs:
       shell: bash
     - name: Publish nuget
       run: |
-           for f in ./[repository]/bin/Release/*.nupkg
+           for f in ./cleanBudget-BusinessLogic/bin/Release/*.nupkg
            do
-             curl -vX PUT -u "rodemic:${{ secrets.GHPackagesToken }}" -F package=@$f https://nuget.pkg.github.com/[user]/
+             curl -vX PUT -u "rodemic:${{ secrets.GHPackagesToken }}" -F package=@$f https://nuget.pkg.github.com/rodemic/
            done
       shell: bash
