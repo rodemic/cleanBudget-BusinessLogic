@@ -14,7 +14,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="nuget.config" />
+	  <None Include="bin\Release\cleanBudget-BL.1.0.0.nupkg" />
 	</ItemGroup>
 
 </Project>
