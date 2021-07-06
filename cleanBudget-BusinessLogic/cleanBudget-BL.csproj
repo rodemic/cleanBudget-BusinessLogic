@@ -14,7 +14,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="bin\Release\cleanBudget-BL.1.0.0.nupkg" />
+	  <Folder Include="bin\Release\" />
 	</ItemGroup>
-
+<GeneratePackageOnBuild>true</GeneratePackageOnBuild>	
 </Project>
