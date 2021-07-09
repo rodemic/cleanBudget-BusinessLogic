@@ -7,7 +7,7 @@
 		<Authors>Roderick Micallef</Authors>
 		<Company>cleanBudget</Company>
 		<PackageId>cleanBudget-BL</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<RepositoryUrl>https://github.com/rodemic/cleanBudget-BusinessLogic</RepositoryUrl>
 		<Copyright>MIT</Copyright>
 		<Description>The Business Logic package of cleanBudget</Description>
@@ -16,5 +16,4 @@
 	<ItemGroup>
 	  <Folder Include="bin\Release\" />
 	</ItemGroup>
-<GeneratePackageOnBuild>true</GeneratePackageOnBuild>	
 </Project>
