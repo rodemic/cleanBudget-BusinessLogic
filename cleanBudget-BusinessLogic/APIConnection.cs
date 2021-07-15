@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace cleanBudget_BL
 {
-    public class APIConnection<T, U> : iAPIConnection<T, U> where T : class where U : class
+    public class APIConnection : iAPIConnection
     {
         private HttpClient client;
         public APIConnection(HttpClient client)
@@ -19,7 +19,7 @@ namespace cleanBudget_BL
             this.client = client;
         }
 
-        public async Task<T> SendGetRequestAsync(string APILink, Dictionary<string,object> requestObj = null)
+        public async Task<T> SendGetRequestAsync<T>(string APILink, Dictionary<string,object> requestObj = null)
         {
             try
             {
@@ -33,11 +33,11 @@ namespace cleanBudget_BL
             }
             catch (HttpRequestException e)
             {
-                return null;
+                return default;
             }
         }
 
-        public async Task<T> SendPostRequestAsync(string APILink, U requestObj = null)
+        public async Task<T> SendPostRequestAsync<T,U>(string APILink, U requestObj = default)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace cleanBudget_BL
             }
             catch (HttpRequestException e)
             {
-                return null;
+                return default;
             }
         }
     }
