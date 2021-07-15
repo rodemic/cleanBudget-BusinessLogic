@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace cleanBudget_BL.interfaces
 {
-    public interface iAPIConnection<T, U> where T : class where U : class
+    public interface iAPIConnection
     {
-        public Task<T> SendGetRequestAsync(string APILink, Dictionary<string, object> requestObj);
-        public Task<T> SendPostRequestAsync(string APILink,U requestObj);
+        public Task<T> SendGetRequestAsync<T>(string APILink, Dictionary<string, object> requestObj);
+        public Task<T> SendPostRequestAsync<T,U>(string APILink,U requestObj);
     }
 }
