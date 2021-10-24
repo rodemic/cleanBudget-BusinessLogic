@@ -1,4 +1,4 @@
-﻿using cleanBudget_BL.interfaces;
+﻿using cleanBudget_BL.Clients.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,9 +9,9 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace cleanBudget_BL
+namespace cleanBudget_BL.Clients
 {
-    public class APIConnection : iAPIConnection
+    public class APIConnection : IAPIConnection
     {
         private HttpClient client;
         public APIConnection(HttpClient client)

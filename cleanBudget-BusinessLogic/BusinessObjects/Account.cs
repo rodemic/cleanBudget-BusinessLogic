@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace cleanBudget_BL.BusinessObjects
 {
-    public class FinancialAccount
+    public class Account
     {
         public int ID { get; set; }
         public string Name { get; set; }
         public double StartingAmount { get; set; }
         public DateTime SetDate { get; set; }
-        public virtual ICollection<Transaction> Transactions { get; set; }
         public string AccountID { get; set; }
     }
 }
