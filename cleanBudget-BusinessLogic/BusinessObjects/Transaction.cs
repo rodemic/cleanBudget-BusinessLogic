@@ -8,9 +8,9 @@ namespace cleanBudget_BL.BusinessObjects
 {
     public class Transaction
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public double Amount { get; set; }
         public Category Category { get; set; }
-        public string AccountID { get; set; }
+        public int AccountID { get; set; }
     }
 }

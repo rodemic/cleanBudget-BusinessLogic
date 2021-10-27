@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace cleanBudget_BL.BusinessObjects
 {
-    public class Category
+    public class UserAccount
     {
         public int Id { get; set; }
+
         public string Name { get; set; }
-        public string Description { get; set; }
-        public string HexCode { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }

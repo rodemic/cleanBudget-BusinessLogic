@@ -8,10 +8,10 @@ namespace cleanBudget_BL.BusinessObjects
 {
     public class Account
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public double StartingAmount { get; set; }
-        public DateTime SetDate { get; set; }
-        public string AccountID { get; set; }
+        public DateTime DateCreated { get; set; }
+        public int UserAccountId { get; set; }
     }
 }

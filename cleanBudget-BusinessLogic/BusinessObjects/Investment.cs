@@ -12,7 +12,7 @@ namespace cleanBudget_BL.BusinessObjects
         public string Ticker { get; set; }
         public double Amount { get; set; }
         public double Cost { get; set; }
-        public DateTime PurchDate { get; set; }
-        public string AccountID { get; set; }
+        public DateTime PurchaseDate { get; set; }
+        public int AccountID { get; set; }
     }
 }
