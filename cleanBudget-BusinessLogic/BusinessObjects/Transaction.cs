@@ -10,8 +10,8 @@ namespace cleanBudget_BL.BusinessObjects
     {
         public int Id { get; set; }
         public double Amount { get; set; }
-        public Category Category { get; set; }
-        public int AccountID { get; set; }
+        public int CategoryId { get; set; }
+        public int AccountId { get; set; }
         public DateTime PurchaseDate { get; set; }
     }
 }

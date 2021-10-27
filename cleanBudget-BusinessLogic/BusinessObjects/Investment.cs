@@ -9,7 +9,7 @@ namespace cleanBudget_BL.BusinessObjects
 {
     public class Investment
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         [MaxLength(50)]
         public string Name { get; set; }
         [MaxLength(4)]
@@ -17,6 +17,6 @@ namespace cleanBudget_BL.BusinessObjects
         public double Amount { get; set; }
         public double Cost { get; set; }
         public DateTime PurchaseDate { get; set; }
-        public int AccountID { get; set; }
+        public int AccountId { get; set; }
     }
 }
