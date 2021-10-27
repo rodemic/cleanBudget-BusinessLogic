@@ -7,7 +7,7 @@
 		<Authors>Roderick Micallef</Authors>
 		<Company>cleanBudget</Company>
 		<PackageId>cleanBudget-BL</PackageId>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
 		<RepositoryUrl>https://github.com/rodemic/cleanBudget-BusinessLogic</RepositoryUrl>
 		<Copyright>MIT</Copyright>
 		<Description>The Business Logic package of cleanBudget</Description>
